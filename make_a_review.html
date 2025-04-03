@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Review</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&family=Trirong">
+    <link rel="stylesheet" href="css/external_homepage_v2.css">
+</head>
+
+<body>
+    <div class="topnav">
+		<a href="homepage.html">
+		<div class="logo">
+			<img src="image/pint_icon.png" alt="Logo">
+		</div>
+		</a>
+		<div class="navbar">
+			<a href="homepage.html" class="active">Home</a>
+			<a href="review.html">Reviews</a>
+			<a href="make_a_review.html">Make A Review</a>
+		</div>
+		<div class="login">
+			<form action="login_page.html">
+			<button type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+	
+	<h1>HOW WAS YOUR EXPERIENCE IN A PUB IN DUBLIN?</h1>
+	<div class="pub_images">
+        <form class="review-form">
+		
+		<label for="nome_pub">SELECT THE PUB'S NAME</label>
+            <select id="nome_pub" name="nome_pub" required>
+                <option value="" disabled selected>Select a Pub</option>
+                <option value="The Temple Bar Pub">The Temple Bar Pub</option>
+                <option value="Stag's Head Dublin">Stag's Head Dublin</option>
+                <option value="The Long Hall">The Long Hall</option>
+                <option value="Mulligan's Of Poolbeg Street">Mulligan's Of Poolbeg Street</option>
+                <option value="The Cobblestone">The Cobblestone</option>
+            </select>
+			
+			
+            <label for="name">YOUR NAME:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3" maxlength="20">
+			<label for="phone_number">YOUR PHONE NUMBER:</label>
+			<input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number" required pattern="[0-9]{10}" maxlength="10">
+			<label for="email">E-MAIL:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}">
+			
+			<label>GENDER:</label>
+            <div class="radio-group">
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+
+                <input type="radio" id="Other" name="Gender" value="Other">
+                <label for="Other">Other</label>
+
+                <input type="radio" id="Prefer_not_to_say" name="Gender" value="Prefer not to say">
+                <label for="Prefer_not_to_say">Prefer not to say</label>
+            </div>
+
+            <label>DRINKS PREFERENCES:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="Fishing" name="Hobbies" value="Fishing">
+                <label for="Fishing">Beer</label>
+
+                <input type="checkbox" id="Dancing" name="Hobbies" value="Dancing">
+                <label for="Dancing">Cider</label>
+
+                <input type="checkbox" id="Surfing" name="Hobbies" value="Surfing">
+                <label for="Surfing">Vodka</label>
+
+                <input type="checkbox" id="Yodelling" name="Hobbies" value="Yodelling">
+                <label for="Yodelling">Soft Drinks</label>
+            </div>
+
+			
+			<label for="last_visit">LAST VISIT DATE:</label>
+			<input type="date" id="last_visit" name="last_visit" required>
+			
+			<label for="rating_pub">PUB SCORE:</label>
+            <select id="rating_pub" name="rating_pub" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_pint">PINT SCORE:</label>
+            <select id="rating_pint" name="rating_pint" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_variety">VARIETY OF DRINKS:</label>
+            <select id="rating_variety" name="rating_variety" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_food">QUALITY OF FOOD:</label>
+            <select id="rating_food" name="rating_food" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_staff">STAFF:</label>
+            <select id="rating_staff" name="rating_staff" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_music">NICE MUSIC:</label>
+            <select id="rating_music" name="rating_music" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_acess">ACESSIBILITY:</label>
+            <select id="rating_acess" name="rating_acess" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_location">LOCATION:</label>
+            <select id="rating_location" name="rating_location" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_well">WELL-MANTEINED:</label>
+            <select id="rating_well" name="rating_well" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+			<label for="rating_sec">SECURITY:</label>
+            <select id="rating_sec" name="rating_sec" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Fair</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+			
+            <label for="review">YOUR REVIEW:</label>
+            <textarea id="review" name="review" placeholder="Write your review here..." required></textarea>
+
+        <button class="review-button">SUBMIT YOUR REVIEW</button>
+	</form>
+   </div>
+	
+	<footer>
+        <p>Author: Erika Silva<br>
+        <a href="erika-cs@live.com">erika-cs@live.com</a></p>
+    </footer>
+</body>
+</html>
